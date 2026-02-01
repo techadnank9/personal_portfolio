@@ -3,9 +3,10 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { category: "Frontend", items: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"] },
-  { category: "Backend", items: ["Node.js", "Express", "Microservices", "PostgreSQL", "MongoDB", "RabbitMQ"] },
-  { category: "DevOps & Cloud", items: ["Docker", "Kubernetes", "AWS EC2", "AWS S3", "CI/CD", "Nginx"] },
+  { category: "Frontend", items: ["React.js", "React Native", "Next.js", "Redux", "TypeScript", "HTML5", "CSS3", "JavaScript ES6+"] },
+  { category: "Backend", items: ["Node.js", "Express.js", "GraphQL", "RESTful APIs", "Kafka", "MongoDB", "PostgreSQL", "Firebase"] },
+  { category: "Cloud & DevOps", items: ["Docker", "Kubernetes", "Google Cloud Platform", "Azure", "Machine Learning", "TensorFlow", "PyTorch"] },
+  { category: "Testing & Tools", items: ["Jest", "Cypress", "React Testing Library", "Agile", "Git", "CI/CD"] },
 ];
 
 export default function Skills() {
@@ -32,7 +33,7 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skills.map((group, idx) => (
             <motion.div
               key={idx}

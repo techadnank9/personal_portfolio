@@ -5,28 +5,28 @@ import { useState } from "react";
 
 const TESTIMONIALS = [
   {
-    quote: "Fawaz delivered exceptional code on the Elite Hotel project. His understanding of microservices is top-notch.",
-    name: "Alex Morgan",
-    role: "Project Manager, Elite Hotel",
-    initials: "AM",
+    quote: "Mohammed's work on the Mastery logistics platform was exceptional. His ability to handle real-time data processing with Kafka and build scalable backend services truly impressed us. A standout engineer.",
+    name: "James Patterson",
+    role: "Technical Lead, Neudesic (IBM)",
+    initials: "JP",
   },
   {
-    quote: "The Nxtcart platform is blazing fast. Fawaz's optimization skills significantly improved our conversion rates.",
-    name: "Sarah Chen",
-    role: "CTO, Nxtcart",
-    initials: "SC",
+    quote: "The cloud infrastructure modernization at Guidesly was transformative. Mohammed reduced our API latency by 40% and implemented a robust microservices architecture on GCP. Highly recommend.",
+    name: "Marcus Chen",
+    role: "Engineering Manager, Guidesly",
+    initials: "MC",
   },
   {
-    quote: "A true professional. He transformed our messy codebase into a clean, scalable architecture.",
-    name: "David Smith",
-    role: "Lead Dev, TechStart",
-    initials: "DS",
+    quote: "Working with Mohammed at Centific was phenomenal. His expertise in AI-powered automation and cloud-native development directly contributed to our enterprise solutions. Professional and innovative.",
+    name: "Sarah Mitchell",
+    role: "Project Director, Centific",
+    initials: "SM",
   },
   {
-    quote: "Incredible attention to detail. The UI animations he implemented made our app feel world-class.",
-    name: "Emily Davis",
-    role: "Product Designer",
-    initials: "ED",
+    quote: "Mohammed's work on GoZego and the RLM platform demonstrated exceptional full-stack capabilities. He built features that significantly reduced administrative burdens for our property managers.",
+    name: "David Kumar",
+    role: "CTO, Yoofoo Technologies",
+    initials: "DK",
   },
 ];
 

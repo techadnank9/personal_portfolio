@@ -6,130 +6,100 @@ import { useState } from "react";
 // Project Data with Media & Layout Configuration
 const projects = [
   {
-    id: "elite-hotel",
-    title: "Elite Hotel",
-    category: "Full Stack • Microservices",
-    description: "Scalable hotel management system with 5+ Node.js services.",
-    longDescription: "A comprehensive Microservices-based Hotel Management System designed to streamline reservations, billing, and housekeeping. Built with a focus on scalability and service isolation.",
-    techStack: ["Node.js", "Docker", "Kubernetes", "Redis", "RabbitMQ", "Next.js"],
-    repo: "https://github.com/fawazv/Elite-hotel",
+    id: "mastery",
+    title: "Mastery",
+    category: "Supply Chain • Logistics",
+    description: "Leading supply chain logistics platform with real-time driver monitoring.",
+    longDescription: "Developed the Hours of Service (HOS) module for supply chain compliance. Built scalable infrastructure to ingest and process high-volume driving logs with ML-based anomaly detection. Implemented GraphQL for optimized API queries and used Google Cloud Storage for data warehousing.",
+    techStack: ["React.js", "Node.js", "Kafka", "MongoDB", "GraphQL", "GCP", "BigQuery"],
+    repo: "#",
     demo: "#",
     color: "from-blue-600/20 to-cyan-500/20",
     hoverColor: "group-hover:from-blue-600/40 group-hover:to-cyan-500/40",
     span: "md:col-span-2 md:row-span-2",
     mediaType: "image",
-    // Abstract Network/Server for Grid
-    mediaUrl: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Code/Structure Demo for Modal
-    demoUrl: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    mediaUrl: "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    demoUrl: "https://images.pexels.com/photos/616694/pexels-photo-616694.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    id: "nxtcart",
-    title: "Nxtcart",
-    category: "E-Commerce",
-    description: "Modern shopping platform with automated workflows.",
-    longDescription: "A modern e-commerce application featuring secure authentication, payment processing with Stripe/PayPal, and a robust admin dashboard for product management.",
-    techStack: ["Next.js", "TypeScript", "Stripe", "MongoDB", "Shadcn UI"],
-    repo: "https://github.com/fawazv/nxt-cart",
+    id: "guidesly",
+    title: "Guidesly",
+    category: "Outdoor Experiences",
+    description: "Seamless booking and scheduling for outdoor experience guides.",
+    longDescription: "Developed the Guidesly platform connecting fishing guides with clients. Built and optimized backend services with Node.js for smooth booking and scheduling operations. Modernized cloud infrastructure with containerized microservices on Google Cloud using Docker/K8s.",
+    techStack: ["React.js", "Node.js", "MongoDB", "Docker", "Kubernetes", "Google Cloud"],
+    repo: "#",
     demo: "#",
     color: "from-purple-600/20 to-pink-500/20",
     hoverColor: "group-hover:from-purple-600/40 group-hover:to-pink-500/40",
     span: "md:col-span-1 md:row-span-2",
     mediaType: "image",
-    // Shopping/Ecommerce Concept
-    mediaUrl: "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Shopping Interaction
-    demoUrl: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    mediaUrl: "https://images.pexels.com/photos/1618606/pexels-photo-1618606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    demoUrl: "https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    id: "dropbox-clone",
-    title: "Dropbox Clone",
-    category: "Cloud Storage",
-    description: "Secure file storage with drag-and-drop & metadata.",
-    longDescription: "A functional clone of Dropbox allowing users to upload, organize, and manage files in the cloud. Features real-time updates and secure authentication.",
-    techStack: ["React", "Firebase", "Tailwind CSS"],
-    repo: "https://github.com/fawazv/dropbox-clone",
+    id: "amn-shiftwise",
+    title: "AMN Shiftwise",
+    category: "Healthcare Staffing",
+    description: "Vendor management system for hospital staffing solutions.",
+    longDescription: "Developed order creation functionality for healthcare facilities to request medical staff. Enabled vendors to view and fulfill orders with customizable criteria like specialization, availability, and location. Streamlined matching of healthcare professionals with required shifts.",
+    techStack: ["React.js", "Node.js", "CosmoDB", "Azure"],
+    repo: "#",
     demo: "#",
     color: "from-orange-500/20 to-red-500/20",
     hoverColor: "group-hover:from-orange-500/40 group-hover:to-red-500/40",
     span: "md:col-span-1 md:row-span-1",
     mediaType: "image",
-    // Cloud/Data Abstract
-    mediaUrl: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // File Management
-    demoUrl: "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    mediaUrl: "https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    demoUrl: "https://images.pexels.com/photos/4173612/pexels-photo-4173612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    id: "blog-microservices",
-    title: "Blog Platform",
-    category: "Microservices",
-    description: "Event-driven architecture with RabbitMQ.",
-    longDescription: "Built User, Post, and Comment services with API Gateway and RabbitMQ communication. Containerized with Docker Compose and automated pipeline via GitHub Actions.",
-    techStack: ["Node.js", "RabbitMQ", "Docker"],
-    repo: "https://github.com/fawazv/blog-microservice",
+    id: "rlm",
+    title: "RLM Platform",
+    category: "Reverse Logistics",
+    description: "Warehouse management for product return and claim processing.",
+    longDescription: "Developed Reverse Logistics Management platform enabling warehouses to initiate claim processes for returning products. Implemented features to manage and track LPN and UPC codes for each return, streamlining reverse logistics operations and reducing processing time.",
+    techStack: ["React Native", "Redux", "SQL", "Node.js"],
+    repo: "#",
     demo: "#",
     color: "from-green-600/20 to-teal-500/20",
     hoverColor: "group-hover:from-green-600/40 group-hover:to-teal-500/40",
     span: "md:col-span-1 md:row-span-1",
     mediaType: "image",
-    // Typing/Code Abstract
-    mediaUrl: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Server/Terminal
-    demoUrl: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    mediaUrl: "https://images.pexels.com/photos/4480687/pexels-photo-4480687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    demoUrl: "https://images.pexels.com/photos/5632398/pexels-photo-5632398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    id: "bookstore-app",
-    title: "Bookstore",
-    category: "MERN Stack",
-    description: "Book management with separate Frontend/Backend.",
-    longDescription: "Built RESTful APIs with Express.js and MongoDB for complete book management (CRUD). Developed a responsive React frontend integrated with Axios.",
-    techStack: ["MongoDB", "Express", "React"],
-    repo: "https://github.com/fawazv/bookstoreapp",
+    id: "pinit",
+    title: "Pinit",
+    category: "Mobile Navigation",
+    description: "Real-time location discovery and navigation app.",
+    longDescription: "Developed functionality to display nearby places including restaurants, attractions, and parking using FourSquare API. Implemented real-time navigation capabilities with Mapbox, allowing users to find directions to selected locations easily.",
+    techStack: ["React Native", "Redux", "MongoDB", "Node.js", "Mapbox"],
+    repo: "#",
     demo: "#",
     color: "from-indigo-600/20 to-purple-500/20",
     hoverColor: "group-hover:from-indigo-600/40 group-hover:to-purple-500/40",
     span: "md:col-span-1 md:row-span-1",
     mediaType: "image",
-    // Reading/Books
-    mediaUrl: "https://images.pexels.com/photos/207636/pexels-photo-207636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Library/Shelf
-    demoUrl: "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    mediaUrl: "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    demoUrl: "https://images.pexels.com/photos/7974588/pexels-photo-7974588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    id: "pixabay-gallery",
-    title: "Pixabay Gallery",
-    category: "API Integration",
-    description: "Image search gallery using Pixabay API.",
-    longDescription: "Implemented image search and responsive grid gallery using React, Tailwind CSS, and Axios. Integrated Pixabay API for fetching images.",
-    techStack: ["React", "Vite", "Tailwind"],
-    repo: "https://github.com/fawazv/1.-react-tailwind-pixabay-gallery",
+    id: "gozego",
+    title: "GoZego",
+    category: "Property Management",
+    description: "Comprehensive property management solution for managers and associations.",
+    longDescription: "Developed GoZego property management software that simplifies workflows for property managers. Implemented features for automating routine tasks such as tenant communications, payment processing, and maintenance requests, reducing administrative burdens.",
+    techStack: ["React Native", "Redux"],
+    repo: "#",
     demo: "#",
     color: "from-pink-600/20 to-rose-500/20",
     hoverColor: "group-hover:from-pink-600/40 group-hover:to-rose-500/40",
     span: "md:col-span-1 md:row-span-1",
     mediaType: "image",
-    // Color/Art
-    mediaUrl: "https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Searching/Scanning
-    demoUrl: "https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    id: "room-upload",
-    title: "Room Upload",
-    category: "Cloudinary",
-    description: "Secure image upload service details.",
-    longDescription: "Built secure image upload flow using Express, Multer, and Cloudinary SDK with TypeScript backend. Developed responsive React + Vite frontend.",
-    techStack: ["React", "Multer", "Cloudinary"],
-    repo: "https://github.com/fawazv/multer-cloudinary",
-    demo: "#",
-    color: "from-yellow-600/20 to-orange-500/20",
-    hoverColor: "group-hover:from-yellow-600/40 group-hover:to-orange-500/40",
-    span: "md:col-span-1 md:row-span-1",
-    mediaType: "image",
-    // Data Transfer
-    mediaUrl: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Upload/Processing
-    demoUrl: "https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    mediaUrl: "https://images.pexels.com/photos/8535736/pexels-photo-8535736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    demoUrl: "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
 ];
 
